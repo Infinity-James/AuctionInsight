@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A6E53541E3A7AE1003EBE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53531E3A7AE1003EBE63 /* AppDelegate.swift */; };
-		1A6E53561E3A7AE1003EBE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53551E3A7AE1003EBE63 /* ViewController.swift */; };
-		1A6E53591E3A7AE1003EBE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53571E3A7AE1003EBE63 /* Main.storyboard */; };
-		1A6E535B1E3A7AE1003EBE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E535A1E3A7AE1003EBE63 /* Assets.xcassets */; };
-		1A6E535E1E3A7AE1003EBE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E535C1E3A7AE1003EBE63 /* LaunchScreen.storyboard */; };
-		1A6E53691E3A7AE1003EBE63 /* AuctionInsightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53681E3A7AE1003EBE63 /* AuctionInsightTests.swift */; };
+		1A6E537B1E3A7B4A003EBE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */; };
+		1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */; };
+		1A6E537D1E3A7B4A003EBE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53771E3A7B4A003EBE63 /* Main.storyboard */; };
+		1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53781E3A7B4A003EBE63 /* ViewController.swift */; };
+		1A6E53841E3A7B52003EBE63 /* AuctionInsightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +26,14 @@
 
 /* Begin PBXFileReference section */
 		1A6E53501E3A7AE1003EBE63 /* AuctionInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuctionInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A6E53531E3A7AE1003EBE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A6E53551E3A7AE1003EBE63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A6E53581E3A7AE1003EBE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1A6E535A1E3A7AE1003EBE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A6E535D1E3A7AE1003EBE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1A6E535F1E3A7AE1003EBE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6E53641E3A7AE1003EBE63 /* AuctionInsightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuctionInsightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A6E53681E3A7AE1003EBE63 /* AuctionInsightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuctionInsightTests.swift; sourceTree = "<group>"; };
-		1A6E536A1E3A7AE1003EBE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A6E53771E3A7B4A003EBE63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A6E53781E3A7B4A003EBE63 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A6E537A1E3A7B4A003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionInsightTests.swift; sourceTree = "<group>"; };
+		1A6E53831E3A7B52003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +75,9 @@
 		1A6E53521E3A7AE1003EBE63 /* AuctionInsight */ = {
 			isa = PBXGroup;
 			children = (
-				1A6E53531E3A7AE1003EBE63 /* AppDelegate.swift */,
-				1A6E53551E3A7AE1003EBE63 /* ViewController.swift */,
-				1A6E53571E3A7AE1003EBE63 /* Main.storyboard */,
-				1A6E535A1E3A7AE1003EBE63 /* Assets.xcassets */,
-				1A6E535C1E3A7AE1003EBE63 /* LaunchScreen.storyboard */,
-				1A6E535F1E3A7AE1003EBE63 /* Info.plist */,
+				1A6E53731E3A7B4A003EBE63 /* Resource */,
+				1A6E53751E3A7B4A003EBE63 /* Source */,
+				1A6E53791E3A7B4A003EBE63 /* Supporting Files */,
 			);
 			path = AuctionInsight;
 			sourceTree = "<group>";
@@ -90,10 +85,54 @@
 		1A6E53671E3A7AE1003EBE63 /* AuctionInsightTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A6E53681E3A7AE1003EBE63 /* AuctionInsightTests.swift */,
-				1A6E536A1E3A7AE1003EBE63 /* Info.plist */,
+				1A6E53801E3A7B52003EBE63 /* Source */,
+				1A6E53821E3A7B52003EBE63 /* Supporting Files */,
 			);
 			path = AuctionInsightTests;
+			sourceTree = "<group>";
+		};
+		1A6E53731E3A7B4A003EBE63 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		1A6E53751E3A7B4A003EBE63 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */,
+				1A6E53771E3A7B4A003EBE63 /* Main.storyboard */,
+				1A6E53781E3A7B4A003EBE63 /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1A6E53791E3A7B4A003EBE63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E537A1E3A7B4A003EBE63 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		1A6E53801E3A7B52003EBE63 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1A6E53821E3A7B52003EBE63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E53831E3A7B52003EBE63 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +220,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6E535E1E3A7AE1003EBE63 /* LaunchScreen.storyboard in Resources */,
-				1A6E535B1E3A7AE1003EBE63 /* Assets.xcassets in Resources */,
-				1A6E53591E3A7AE1003EBE63 /* Main.storyboard in Resources */,
+				1A6E537B1E3A7B4A003EBE63 /* Assets.xcassets in Resources */,
+				1A6E537D1E3A7B4A003EBE63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6E53561E3A7AE1003EBE63 /* ViewController.swift in Sources */,
-				1A6E53541E3A7AE1003EBE63 /* AppDelegate.swift in Sources */,
+				1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */,
+				1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6E53691E3A7AE1003EBE63 /* AuctionInsightTests.swift in Sources */,
+				1A6E53841E3A7B52003EBE63 /* AuctionInsightTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,25 +261,6 @@
 			targetProxy = 1A6E53651E3A7AE1003EBE63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A6E53571E3A7AE1003EBE63 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6E53581E3A7AE1003EBE63 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A6E535C1E3A7AE1003EBE63 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6E535D1E3A7AE1003EBE63 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A6E536B1E3A7AE1003EBE63 /* Debug */ = {
@@ -340,7 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZFDEX86BMA;
-				INFOPLIST_FILE = AuctionInsight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AuctionInsight/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.AuctionInsight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,7 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZFDEX86BMA;
-				INFOPLIST_FILE = AuctionInsight/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AuctionInsight/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.AuctionInsight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,7 +386,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZFDEX86BMA;
-				INFOPLIST_FILE = AuctionInsightTests/Info.plist;
+				INFOPLIST_FILE = AuctionInsightTests/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.AuctionInsightTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,7 +401,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZFDEX86BMA;
-				INFOPLIST_FILE = AuctionInsightTests/Info.plist;
+				INFOPLIST_FILE = AuctionInsightTests/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.andbeyond.AuctionInsightTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
