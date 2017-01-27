@@ -12,7 +12,7 @@ import Foundation
 struct Auction {
 	let id: Int
 	let title: String
-	let rate: Float
+	let rate: Double
 	let centsTotal: Int
 	let term: Int
 	let riskBand: String
