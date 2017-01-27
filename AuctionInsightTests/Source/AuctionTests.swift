@@ -59,4 +59,16 @@ extension AuctionTests {
 		XCTAssertEqual(auction.riskBand, riskBand)
 		XCTAssertEqual(auction.closeTime, closeTime.dateFromISO8601!)
 	}
+	func testInitFromInvalidJSON_returnNil() {
+		let id = 3
+		let title = "James Valaitis"
+		let rate = 0.42
+		let incompleteJSON: JSONValue = [
+			"id": id,
+			"title": title,
+			"rate": rate
+		]
+		let auction = Auction(json: incompleteJSON)
+		XCTAssertNil(auction)
+	}
 }
