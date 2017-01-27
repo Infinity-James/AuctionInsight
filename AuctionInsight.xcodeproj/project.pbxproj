@@ -13,6 +13,7 @@
 		1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53781E3A7B4A003EBE63 /* ViewController.swift */; };
 		1A6E53841E3A7B52003EBE63 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */; };
 		1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53861E3B65D3003EBE63 /* Auction.swift */; };
+		1A6E53891E3B6AEE003EBE63 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53881E3B6AEE003EBE63 /* JSONInitializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		1A6E53831E3A7B52003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6E53861E3B65D3003EBE63 /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
+		1A6E53881E3B6AEE003EBE63 /* JSONInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONInitializable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				1A6E53861E3B65D3003EBE63 /* Auction.swift */,
+				1A6E53881E3B6AEE003EBE63 /* JSONInitializable.swift */,
 				1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */,
 				1A6E53771E3A7B4A003EBE63 /* Main.storyboard */,
 				1A6E53781E3A7B4A003EBE63 /* ViewController.swift */,
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */,
+				1A6E53891E3B6AEE003EBE63 /* JSONInitializable.swift in Sources */,
 				1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */,
 				1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */,
 			);

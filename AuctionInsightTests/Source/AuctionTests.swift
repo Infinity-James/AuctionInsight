@@ -30,8 +30,7 @@ extension AuctionTests {
 		XCTAssertEqual(auction.riskBand, riskBand)
 		XCTAssertEqual(auction.closeTime, closeTime)
 	}
-	func testInitFromJSON_setProperties() {
-		let auction = Auction(json: json)
+	func testInitFromValidJSON_setProperties() {
 		let id = 3
 		let title = "James Valaitis"
 		let rate = 0.42
@@ -48,6 +47,7 @@ extension AuctionTests {
 			"risk_band": riskBand,
 			"close_time": "2017-02-04T14:18:06.430Z"
 		]
+		guard let auction = Auction(json: json) else { XCTFail("Expected Auction to be initialized from valid JSON.") }
 		XCTAssertEqual(auction.id, id)
 		XCTAssertEqual(auction.title, title)
 		XCTAssertEqual(auction.rate, rate)
