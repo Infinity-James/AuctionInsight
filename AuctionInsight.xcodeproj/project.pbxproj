@@ -11,7 +11,8 @@
 		1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */; };
 		1A6E537D1E3A7B4A003EBE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53771E3A7B4A003EBE63 /* Main.storyboard */; };
 		1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53781E3A7B4A003EBE63 /* ViewController.swift */; };
-		1A6E53841E3A7B52003EBE63 /* AuctionInsightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */; };
+		1A6E53841E3A7B52003EBE63 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */; };
+		1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53861E3B65D3003EBE63 /* Auction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +33,9 @@
 		1A6E53771E3A7B4A003EBE63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1A6E53781E3A7B4A003EBE63 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A6E537A1E3A7B4A003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionInsightTests.swift; sourceTree = "<group>"; };
+		1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		1A6E53831E3A7B52003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6E53861E3B65D3003EBE63 /* Auction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 		1A6E53751E3A7B4A003EBE63 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1A6E53861E3B65D3003EBE63 /* Auction.swift */,
 				1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */,
 				1A6E53771E3A7B4A003EBE63 /* Main.storyboard */,
 				1A6E53781E3A7B4A003EBE63 /* ViewController.swift */,
@@ -121,7 +124,7 @@
 		1A6E53801E3A7B52003EBE63 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1A6E53811E3A7B52003EBE63 /* AuctionInsightTests.swift */,
+				1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6E537E1E3A7B4A003EBE63 /* ViewController.swift in Sources */,
+				1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */,
 				1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,7 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6E53841E3A7B52003EBE63 /* AuctionInsightTests.swift in Sources */,
+				1A6E53841E3A7B52003EBE63 /* AuctionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +433,7 @@
 				1A6E536F1E3A7AE1003EBE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A6E53701E3A7AE1003EBE63 /* Build configuration list for PBXNativeTarget "AuctionInsightTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +442,7 @@
 				1A6E53721E3A7AE1003EBE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
