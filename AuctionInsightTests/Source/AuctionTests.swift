@@ -47,13 +47,16 @@ extension AuctionTests {
 			"risk_band": riskBand,
 			"close_time": "2017-02-04T14:18:06.430Z"
 		]
-		guard let auction = Auction(json: json) else { XCTFail("Expected Auction to be initialized from valid JSON.") }
+		guard let auction = Auction(json: json) else {
+			XCTFail("Expected Auction to be initialized from valid JSON.")
+			return
+		}
 		XCTAssertEqual(auction.id, id)
 		XCTAssertEqual(auction.title, title)
 		XCTAssertEqual(auction.rate, rate)
 		XCTAssertEqual(auction.centsTotal, centsTotal)
 		XCTAssertEqual(auction.term, term)
 		XCTAssertEqual(auction.riskBand, riskBand)
-		XCTAssertEqual(auction.closeTime, closeTime)
+		XCTAssertEqual(auction.closeTime, closeTime.dateFromISO8601!)
 	}
 }

@@ -35,7 +35,8 @@ extension Auction: JSONInitializable {
 			let centsTotal = json[centsTotalKey] as? Int,
 			let term = json[termKey] as? Int,
 			let riskBand = json[riskBandKey] as? String,
-			let closeTimeString = json[closeTimeKey] as? String else { return nil }
+			let closeTimeString = json[closeTimeKey] as? String,
+			let closeTime = closeTimeString.dateFromISO8601 else { return nil }
 		
 		self.id = id
 		self.title = title
@@ -43,6 +44,6 @@ extension Auction: JSONInitializable {
 		self.centsTotal = centsTotal
 		self.term = term
 		self.riskBand = riskBand
-		self.closeTime = Date()
+		self.closeTime = closeTime
 	}
 }
