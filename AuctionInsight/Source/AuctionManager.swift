@@ -8,4 +8,10 @@
 
 //  MARK: Auction Manager
 final class AuctionManager {
+	//  MARK: Properties
+	let client: NetworkClient
+	//  MARK: Initialization
+	init(client: NetworkClient) {
+		self.client = client
+	}
 }
