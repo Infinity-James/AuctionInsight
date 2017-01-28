@@ -10,13 +10,21 @@ import Foundation
 
 //  MARK: Auction
 struct Auction {
+	//  MARK: Properties
 	let id: Int
 	let title: String
 	let rate: Double
 	let centsTotal: Int
 	let term: Int
-	let riskBand: String
+	let riskBand: RiskBand
 	let closeTime: Date
+	//  MARK: Risk Band
+	enum RiskBand: String {
+		case aPlus = "A+"
+		case a = "A"
+		case b = "B"
+		case c = "C"
+	}
 }
 
 //  MARK: JSON Initializable
@@ -34,7 +42,8 @@ extension Auction: JSONInitializable {
 			let rate = json[rateKey] as? Double,
 			let centsTotal = json[centsTotalKey] as? Int,
 			let term = json[termKey] as? Int,
-			let riskBand = json[riskBandKey] as? String,
+			let riskBandRaw = json[riskBandKey] as? String,
+			let riskBand = RiskBand(rawValue: riskBandRaw),
 			let closeTimeString = json[closeTimeKey] as? String,
 			let closeTime = closeTimeString.dateFromISO8601 else { return nil }
 		

@@ -19,7 +19,7 @@ extension AuctionTests {
 		let rate = 0.42
 		let centsTotal = 4200000
 		let term = 64
-		let riskBand = "A+"
+		let riskBand = Auction.RiskBand.aPlus
 		let closeTime = Date()
 		let auction = Auction(id: id, title: title, rate: rate, centsTotal: centsTotal, term: term, riskBand: riskBand, closeTime: closeTime)
 		XCTAssertEqual(auction.id, id)
@@ -36,7 +36,7 @@ extension AuctionTests {
 		let rate = 0.42
 		let centsTotal = 4200000
 		let term = 64
-		let riskBand = "A+"
+		let riskBand = Auction.RiskBand.aPlus
 		let closeTime = "2017-02-04T14:18:06.430Z"
 		let json: JSONValue = [
 			"id": id,
@@ -44,7 +44,7 @@ extension AuctionTests {
 			"rate": rate,
 			"amount_cents": centsTotal,
 			"term": term,
-			"risk_band": riskBand,
+			"risk_band": riskBand.rawValue,
 			"close_time": "2017-02-04T14:18:06.430Z"
 		]
 		guard let auction = Auction(json: json) else {
