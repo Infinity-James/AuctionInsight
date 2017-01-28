@@ -14,3 +14,12 @@ final class AuctionManagerTests: XCTestCase {
 	//  MARK: Properties
 	var sut = AuctionManager()
 }
+//  MARK: Auction Fetch
+extension AuctionManagerTests {
+	func testAuctionFetch_getAuctions() {
+	}
+}
+//  MARK: Mock API Client
+final class MockAuctionClient: NetworkClient {
+	
+}
