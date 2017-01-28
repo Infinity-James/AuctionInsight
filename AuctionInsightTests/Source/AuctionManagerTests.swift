@@ -12,7 +12,16 @@ import XCTest
 //  MARK: Auction Manager Tests
 final class AuctionManagerTests: XCTestCase {
 	//  MARK: Properties
-	var sut = AuctionManager()
+	lazy var sut: AuctionManager = { return AuctionManager(client: self.mockClient) }()
+	var mockClient = MockAuctionClient()
+}
+//  MARK: Set Up 
+extension AuctionManagerTests {
+	override func setUp() {
+		super.setUp()
+		mockClient = MockAuctionClient()
+		sut = AuctionManager(client: mockClient)
+	}
 }
 //  MARK: Auction Fetch
 extension AuctionManagerTests {
