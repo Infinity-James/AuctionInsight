@@ -33,6 +33,7 @@ private extension AuctionListPresenter {
 extension AuctionListPresenter {
 	func attachView(_ view: View) {
 		ui = view
+		loadAuctions()
 	}
 	func detachView() {
 		ui = nil
