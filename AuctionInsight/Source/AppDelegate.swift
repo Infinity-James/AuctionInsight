@@ -17,7 +17,9 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	//  MARK: UIApplicationDelegate
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		window?.rootViewController = wireframe.auctionViewController
+		let auctionVC = wireframe.auctionViewController
+		let navigationController = UINavigationController(rootViewController: auctionVC)
+		window?.rootViewController = navigationController
 		return true
 	}
 }
