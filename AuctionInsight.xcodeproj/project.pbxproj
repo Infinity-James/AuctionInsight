@@ -24,6 +24,7 @@
 		1A6E53A91E3E2683003EBE63 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53A71E3E2683003EBE63 /* UI.swift */; };
 		1A6E53AD1E3E26A2003EBE63 /* AuctionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53AB1E3E26A2003EBE63 /* AuctionListPresenter.swift */; };
 		1A6E53AE1E3E26A2003EBE63 /* AuctionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */; };
+		1A6E53B01E3E26DE003EBE63 /* AuctionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		1A6E53A71E3E2683003EBE63 /* UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
 		1A6E53AB1E3E26A2003EBE63 /* AuctionListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListPresenter.swift; sourceTree = "<group>"; };
 		1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListViewController.swift; sourceTree = "<group>"; };
+		1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			children = (
 				1A6E53AB1E3E26A2003EBE63 /* AuctionListPresenter.swift */,
 				1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */,
+				1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */,
 				1A6E53771E3A7B4A003EBE63 /* Main.storyboard */,
 			);
 			name = "Auction List";
@@ -334,6 +337,7 @@
 				1A6E53991E3E19DB003EBE63 /* Result.swift in Sources */,
 				1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */,
 				1A6E53A91E3E2683003EBE63 /* UI.swift in Sources */,
+				1A6E53B01E3E26DE003EBE63 /* AuctionUI.swift in Sources */,
 				1A6E538F1E3D0098003EBE63 /* AuctionService.swift in Sources */,
 				1A6E53971E3E178F003EBE63 /* APIClient.swift in Sources */,
 			);

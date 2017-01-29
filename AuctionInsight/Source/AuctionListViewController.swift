@@ -9,6 +9,6 @@
 import UIKit
 
 //  MARK: Auction List View Controller
-final class AuctionListViewController: UITableViewController {
+final class AuctionListViewController: UITableViewController, AuctionUI {
 	
 }
