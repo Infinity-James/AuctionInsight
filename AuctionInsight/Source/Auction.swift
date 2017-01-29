@@ -56,3 +56,14 @@ extension Auction: JSONInitializable {
 		self.closeTime = closeTime
 	}
 }
+//  MARK: Equatable
+extension Auction: Equatable {}
+func ==(left: Auction, right: Auction) -> Bool {
+	return left.id == right.id &&
+		left.title == right.title &&
+		left.rate == right.rate &&
+		left.centsTotal == right.centsTotal &&
+		left.term == right.term &&
+		left.riskBand == right.riskBand &&
+		left.closeTime == right.closeTime
+}
