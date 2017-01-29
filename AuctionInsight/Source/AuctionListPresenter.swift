@@ -6,6 +6,8 @@
 //  Copyright © 2017 &Beyond. All rights reserved.
 //
 
+import Foundation
+
 //  MARK: Auction List Presenter
 final class AuctionListPresenter<View: AuctionUI>: Presenter {
 	//  MARK: Properties
@@ -27,14 +29,16 @@ private extension AuctionListPresenter {
 				print("Error occurred whilst fetching auctions: \(error)")
 				return
 			}
-			strongSelf.ui?.show(auctions: auctions)
+			DispatchQueue.main.async {
+				strongSelf.ui?.show(auctions: auctions)
+			}
 		}
 	}
 }
 //  MARK: Selection
 extension AuctionListPresenter {
 	func selected(auction: Auction) {
-		
+		wireframe.presentAuctionDetailViewController(for: auction)
 	}
 }
 //  MARK: Presenter

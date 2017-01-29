@@ -11,18 +11,21 @@ import UIKit
 //  MARK: Auction Wireframe
 final class AuctionWireframe: Wireframe {
 	//  MARK: Properties
-	let auctionService = AuctionService(client: APIClient())
+	fileprivate let auctionService = AuctionService(client: APIClient())
+	fileprivate weak var currentVC: UIViewController?
 	//  MARK: Wireframe
 	let storyboardName = "Auction"
 	//  MARK: View Controllers
 	var auctionListViewController: UIViewController {
 		let vc = storyboard.instantiateViewController(AuctionListViewController.self)
 		vc.presenter = AuctionListPresenter<AuctionListViewController>(auctionService: auctionService, wireframe: self)
+		currentVC = vc
 		return vc
 	}
-	func auctionDetailViewController(for auction: Auction) -> UIViewController {
+	func presentAuctionDetailViewController(for auction: Auction) {
+		guard let currentVC = currentVC else { return }
 		let vc = storyboard.instantiateViewController(AuctionDetailViewController.self)
 		vc.presenter = AuctionDetailPresenter<AuctionDetailViewController>(auction: auction)
-		return vc
+		currentVC.show(vc, sender: nil)
 	}
 }

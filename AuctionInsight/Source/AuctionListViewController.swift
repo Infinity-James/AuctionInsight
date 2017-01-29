@@ -42,6 +42,14 @@ extension AuctionListViewController {
 		return auctions.count
 	}
 }
+//  MARK: UITableViewDelegate
+extension AuctionListViewController {
+	override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		let auction = auctions[indexPath.row]
+		presenter?.selected(auction: auction)
+		tableView.deselectRow(at: indexPath, animated: true)
+	}
+}
 //  MARK: View Lifecycle
 extension AuctionListViewController {
 	override func viewDidLoad() {
