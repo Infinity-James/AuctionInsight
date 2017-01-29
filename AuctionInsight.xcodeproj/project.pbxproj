@@ -19,6 +19,7 @@
 		1A6E538F1E3D0098003EBE63 /* AuctionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E538E1E3D0098003EBE63 /* AuctionService.swift */; };
 		1A6E53931E3D0176003EBE63 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53921E3D0176003EBE63 /* NetworkClient.swift */; };
 		1A6E53951E3E1118003EBE63 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53941E3E1118003EBE63 /* Resource.swift */; };
+		1A6E53971E3E178F003EBE63 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53961E3E178F003EBE63 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		1A6E538E1E3D0098003EBE63 /* AuctionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionService.swift; sourceTree = "<group>"; };
 		1A6E53921E3D0176003EBE63 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		1A6E53941E3E1118003EBE63 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		1A6E53961E3E178F003EBE63 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				1A6E53921E3D0176003EBE63 /* NetworkClient.swift */,
 				1A6E53941E3E1118003EBE63 /* Resource.swift */,
+				1A6E53961E3E178F003EBE63 /* APIClient.swift */,
 				1A6E53861E3B65D3003EBE63 /* Auction.swift */,
 				1A6E53881E3B6AEE003EBE63 /* JSONInitializable.swift */,
 				1A6E538A1E3B73FD003EBE63 /* Date+ISO.swift */,
@@ -268,6 +271,7 @@
 				1A6E53931E3D0176003EBE63 /* NetworkClient.swift in Sources */,
 				1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */,
 				1A6E538F1E3D0098003EBE63 /* AuctionService.swift in Sources */,
+				1A6E53971E3E178F003EBE63 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
