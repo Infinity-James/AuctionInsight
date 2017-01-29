@@ -7,6 +7,16 @@
 //
 
 //  MARK: Auction Detail Presenter
-final class AuctionDetailPresenter {
-	
+final class AuctionDetailPresenter<View: AuctionDetailUI>: Presenter {
+	//  MARK: Properties
+	weak var ui: View?
+}
+//  MARK: Presenter
+extension AuctionDetailPresenter {
+	func attachView(_ view: View) {
+		ui = view
+	}
+	func detachView() {
+		ui = nil
+	}
 }
