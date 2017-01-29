@@ -13,9 +13,11 @@ import UIKit
 final class AppDelegate: UIResponder, UIApplicationDelegate {
 	//  MARK: Properties
 	var window: UIWindow?
+	let wireframe = AuctionWireframe()
 	
 	//  MARK: UIApplicationDelegate
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+		window?.rootViewController = wireframe.auctionViewController
 		return true
 	}
 }

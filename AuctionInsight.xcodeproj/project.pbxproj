@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A6E537B1E3A7B4A003EBE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */; };
 		1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */; };
-		1A6E537D1E3A7B4A003EBE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53771E3A7B4A003EBE63 /* Main.storyboard */; };
+		1A6E537D1E3A7B4A003EBE63 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53771E3A7B4A003EBE63 /* Auction.storyboard */; };
 		1A6E53841E3A7B52003EBE63 /* AuctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */; };
 		1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53861E3B65D3003EBE63 /* Auction.swift */; };
 		1A6E53891E3B6AEE003EBE63 /* JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53881E3B6AEE003EBE63 /* JSONInitializable.swift */; };
@@ -26,6 +26,8 @@
 		1A6E53AE1E3E26A2003EBE63 /* AuctionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */; };
 		1A6E53B01E3E26DE003EBE63 /* AuctionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */; };
 		1A6E53B21E3E2940003EBE63 /* AuctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53B11E3E2940003EBE63 /* AuctionCell.swift */; };
+		1A6E53B41E3E30E7003EBE63 /* AuctionWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53B31E3E30E7003EBE63 /* AuctionWireframe.swift */; };
+		1A6E53B61E3E32C1003EBE63 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53B51E3E32C1003EBE63 /* Wireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 		1A6E53641E3A7AE1003EBE63 /* AuctionInsightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuctionInsightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A6E53771E3A7B4A003EBE63 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A6E53771E3A7B4A003EBE63 /* Auction.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auction.storyboard; sourceTree = "<group>"; };
 		1A6E537A1E3A7B4A003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6E53811E3A7B52003EBE63 /* AuctionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionTests.swift; sourceTree = "<group>"; };
 		1A6E53831E3A7B52003EBE63 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionListViewController.swift; sourceTree = "<group>"; };
 		1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionUI.swift; sourceTree = "<group>"; };
 		1A6E53B11E3E2940003EBE63 /* AuctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionCell.swift; sourceTree = "<group>"; };
+		1A6E53B31E3E30E7003EBE63 /* AuctionWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionWireframe.swift; sourceTree = "<group>"; };
+		1A6E53B51E3E32C1003EBE63 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,11 +203,12 @@
 		1A6E539D1E3E23EB003EBE63 /* Auction List */ = {
 			isa = PBXGroup;
 			children = (
+				1A6E53771E3A7B4A003EBE63 /* Auction.storyboard */,
 				1A6E53B11E3E2940003EBE63 /* AuctionCell.swift */,
 				1A6E53AB1E3E26A2003EBE63 /* AuctionListPresenter.swift */,
 				1A6E53AC1E3E26A2003EBE63 /* AuctionListViewController.swift */,
 				1A6E53AF1E3E26DE003EBE63 /* AuctionUI.swift */,
-				1A6E53771E3A7B4A003EBE63 /* Main.storyboard */,
+				1A6E53B31E3E30E7003EBE63 /* AuctionWireframe.swift */,
 			);
 			name = "Auction List";
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		1A6E53AA1E3E2687003EBE63 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				1A6E53B51E3E32C1003EBE63 /* Wireframe.swift */,
 				1A6E53A61E3E2683003EBE63 /* Presenter.swift */,
 				1A6E53A71E3E2683003EBE63 /* UI.swift */,
 			);
@@ -311,7 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6E537B1E3A7B4A003EBE63 /* Assets.xcassets in Resources */,
-				1A6E537D1E3A7B4A003EBE63 /* Main.storyboard in Resources */,
+				1A6E537D1E3A7B4A003EBE63 /* Auction.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,11 +335,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6E53B61E3E32C1003EBE63 /* Wireframe.swift in Sources */,
 				1A6E53951E3E1118003EBE63 /* Resource.swift in Sources */,
 				1A6E538B1E3B73FD003EBE63 /* Date+ISO.swift in Sources */,
 				1A6E53891E3B6AEE003EBE63 /* JSONInitializable.swift in Sources */,
 				1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */,
 				1A6E53AD1E3E26A2003EBE63 /* AuctionListPresenter.swift in Sources */,
+				1A6E53B41E3E30E7003EBE63 /* AuctionWireframe.swift in Sources */,
 				1A6E53AE1E3E26A2003EBE63 /* AuctionListViewController.swift in Sources */,
 				1A6E53A81E3E2683003EBE63 /* Presenter.swift in Sources */,
 				1A6E53931E3D0176003EBE63 /* NetworkClient.swift in Sources */,

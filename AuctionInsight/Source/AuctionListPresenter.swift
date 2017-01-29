@@ -9,7 +9,7 @@
 //  MARK: Auction List Presenter
 final class AuctionListPresenter<View: AuctionUI>: Presenter {
 	//  MARK: Properties
-	var ui: View?
+	weak var ui: View?
 	let auctionService: AuctionService
 	//  MARK: Initialzation
 	init(auctionService: AuctionService) {

@@ -15,6 +15,8 @@ final class AuctionListViewController: UITableViewController, AuctionUI {
 	//  MARK: Properties
 	///	The auctions to display.
 	fileprivate var auctions = [Auction]()
+	///	The presenter to manage this view.
+	var presenter: AuctionListPresenter<AuctionListViewController>?
 }
 //  MARK: AuctionUI
 extension AuctionListViewController {
@@ -38,5 +40,16 @@ extension AuctionListViewController {
 	}
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return auctions.count
+	}
+}
+//  MARK: View Lifecycle
+extension AuctionListViewController {
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		presenter?.attachView(self)
+	}
+	override func didReceiveMemoryWarning() {
+		presenter?.detachView()
+		super.didReceiveMemoryWarning()
 	}
 }
