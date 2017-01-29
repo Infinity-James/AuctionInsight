@@ -72,5 +72,156 @@
             </objects>
             <point key="canvasLocation" x="-106.40000000000001" y="99.400299850074973"/>
         </scene>
+        <!--Auction Detail View Controller-->
+        <scene sceneID="XQK-Nr-C3J">
+            <objects>
+                <viewController storyboardIdentifier="AuctionDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vgp-JN-Iid" customClass="AuctionDetailViewController" customModule="AuctionInsight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Y0-O0-d5T"/>
+                        <viewControllerLayoutGuide type="bottom" id="LFq-ui-hdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f90-a7-Ph1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kEF-JQ-IGd" userLabel="Detail">
+                                <rect key="frame" x="16" y="147" width="343" height="102.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PrZ-nz-qSs" userLabel="Rate">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0e-O8-58k">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="128" id="Jhq-gN-wEM"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kal-Da-kAG">
+                                                <rect key="frame" x="128" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FK8-wh-1ZA" userLabel="Cents Total">
+                                        <rect key="frame" x="0.0" y="20.5" width="170" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cents Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1W-5e-lLL">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xn0-Mg-VJi">
+                                                <rect key="frame" x="128" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfR-QM-atg" userLabel="Term">
+                                        <rect key="frame" x="0.0" y="41" width="170" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Term" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oU5-Lw-Dsc">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THq-pO-cha">
+                                                <rect key="frame" x="128" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbi-yX-Nr4" userLabel="Risk Band">
+                                        <rect key="frame" x="0.0" y="61.5" width="170" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Band" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnx-l2-k5U">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prY-dU-Run">
+                                                <rect key="frame" x="128" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6Q-sh-OY7" userLabel="Close Time">
+                                        <rect key="frame" x="0.0" y="82" width="170" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9A9-hR-alm">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezj-hK-1t4">
+                                                <rect key="frame" x="128" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="s0e-O8-58k" firstAttribute="width" secondItem="Qnx-l2-k5U" secondAttribute="width" id="7EZ-hc-Q9X"/>
+                                    <constraint firstItem="9A9-hR-alm" firstAttribute="width" secondItem="s0e-O8-58k" secondAttribute="width" id="CRd-rg-Jx4"/>
+                                    <constraint firstItem="s0e-O8-58k" firstAttribute="width" secondItem="l1W-5e-lLL" secondAttribute="width" id="ouE-hR-eDp"/>
+                                    <constraint firstItem="s0e-O8-58k" firstAttribute="width" secondItem="oU5-Lw-Dsc" secondAttribute="width" id="yiO-OK-6Ob"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hug-kj-HCp" userLabel="Estimated Return">
+                                <rect key="frame" x="138.5" y="44" width="97.5" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estimated Return" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3x-2l-eXY">
+                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="14.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFh-G2-KfK">
+                                        <rect key="frame" x="15.5" y="14.5" width="66.5" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hug-kj-HCp" firstAttribute="centerX" secondItem="f90-a7-Ph1" secondAttribute="centerX" id="OiH-hS-xb5"/>
+                            <constraint firstItem="hug-kj-HCp" firstAttribute="top" secondItem="5Y0-O0-d5T" secondAttribute="bottom" constant="24" id="Xyl-m7-yFb"/>
+                            <constraint firstItem="kEF-JQ-IGd" firstAttribute="leading" secondItem="f90-a7-Ph1" secondAttribute="leadingMargin" id="cnO-Un-mWK"/>
+                            <constraint firstItem="kEF-JQ-IGd" firstAttribute="top" secondItem="hug-kj-HCp" secondAttribute="bottom" constant="55" id="qto-Vh-W6k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kEF-JQ-IGd" secondAttribute="trailing" id="zaq-k3-dc7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="centsTotalLabel" destination="Xn0-Mg-VJi" id="QCj-g9-7cI"/>
+                        <outlet property="closeTimeLabel" destination="ezj-hK-1t4" id="kbC-KG-u2w"/>
+                        <outlet property="estimateReturnLabel" destination="YFh-G2-KfK" id="cWh-pd-B4e"/>
+                        <outlet property="rateLabel" destination="Kal-Da-kAG" id="GLh-fy-lj2"/>
+                        <outlet property="riskBandLabel" destination="prY-dU-Run" id="OeJ-KE-49f"/>
+                        <outlet property="termLabel" destination="THq-pO-cha" id="Q1f-ei-3mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmb-Tj-yYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="613.60000000000002" y="99.400299850074973"/>
+        </scene>
     </scenes>
 </document>

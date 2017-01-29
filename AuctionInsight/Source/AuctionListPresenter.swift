@@ -41,6 +41,7 @@ extension AuctionListPresenter {
 extension AuctionListPresenter {
 	func attachView(_ view: View) {
 		ui = view
+		ui?.set(title: "Auctions")
 		loadAuctions()
 	}
 	func detachView() {

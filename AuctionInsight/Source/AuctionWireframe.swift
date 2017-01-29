@@ -15,9 +15,14 @@ final class AuctionWireframe: Wireframe {
 	//  MARK: Wireframe
 	let storyboardName = "Auction"
 	//  MARK: View Controllers
-	var auctionViewController: UIViewController {
+	var auctionListViewController: UIViewController {
 		let vc = storyboard.instantiateViewController(AuctionListViewController.self)
 		vc.presenter = AuctionListPresenter<AuctionListViewController>(auctionService: auctionService, wireframe: self)
+		return vc
+	}
+	func auctionDetailViewController(for auction: Auction) -> UIViewController {
+		let vc = storyboard.instantiateViewController(AuctionDetailViewController.self)
+		vc.presenter = AuctionDetailPresenter<AuctionDetailViewController>(auction: auction)
 		return vc
 	}
 }
