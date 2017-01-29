@@ -11,9 +11,11 @@ final class AuctionListPresenter<View: AuctionUI>: Presenter {
 	//  MARK: Properties
 	weak var ui: View?
 	let auctionService: AuctionService
+	unowned let wireframe: AuctionWireframe
 	//  MARK: Initialzation
-	init(auctionService: AuctionService) {
+	init(auctionService: AuctionService, wireframe: AuctionWireframe) {
 		self.auctionService = auctionService
+		self.wireframe = wireframe
 	}
 }
 //  MARK: Auction Management
@@ -27,6 +29,12 @@ private extension AuctionListPresenter {
 			}
 			strongSelf.ui?.show(auctions: auctions)
 		}
+	}
+}
+//  MARK: Selection
+extension AuctionListPresenter {
+	func selected(auction: Auction) {
+		
 	}
 }
 //  MARK: Presenter
