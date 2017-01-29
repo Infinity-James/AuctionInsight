@@ -7,4 +7,7 @@
 //
 
 //  MARK: Auction UI
-protocol AuctionUI: UI { }
+protocol AuctionUI: UI {
+	//  MARK: Auction Display
+	func show(auctions: [Auction])
+}

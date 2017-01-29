@@ -10,6 +10,24 @@
 final class AuctionListPresenter<View: AuctionUI>: Presenter {
 	//  MARK: Properties
 	var ui: View?
+	let auctionService: AuctionService
+	//  MARK: Initialzation
+	init(auctionService: AuctionService) {
+		self.auctionService = auctionService
+	}
+}
+//  MARK: Auction Management
+private extension AuctionListPresenter {
+	func loadAuctions() {
+		auctionService.auctions { [weak self] auctions, error in
+			guard let strongSelf = self else { return }
+			guard let auctions = auctions, error == nil else {
+				print("Error occurred whilst fetching auctions: \(error)")
+				return
+			}
+			strongSelf.ui?.show(auctions: auctions)
+		}
+	}
 }
 //  MARK: Presenter
 extension AuctionListPresenter {
