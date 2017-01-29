@@ -27,6 +27,11 @@ extension Result {
 		guard case .success(let v) = self else { return nil }
 		return v
 	}
+	///	The error if the operation failed.
+	public var error: Error? {
+		guard case .error(let error) = self else { return nil }
+		return error
+	}
 }
 //  MARK: Network Client Error
 public enum NetworkClientError: Error {
