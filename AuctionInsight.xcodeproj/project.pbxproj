@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A172D4F1E3E49C000985D54 /* AuctionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A172D4E1E3E49C000985D54 /* AuctionDetailViewController.swift */; };
+		1A172D521E3E4A2400985D54 /* AuctionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A172D511E3E4A2400985D54 /* AuctionDetailPresenter.swift */; };
+		1A172D541E3E4A5A00985D54 /* AuctionDetailUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A172D531E3E4A5A00985D54 /* AuctionDetailUI.swift */; };
 		1A6E537B1E3A7B4A003EBE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */; };
 		1A6E537C1E3A7B4A003EBE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E53761E3A7B4A003EBE63 /* AppDelegate.swift */; };
 		1A6E537D1E3A7B4A003EBE63 /* Auction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6E53771E3A7B4A003EBE63 /* Auction.storyboard */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A172D4E1E3E49C000985D54 /* AuctionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDetailViewController.swift; sourceTree = "<group>"; };
+		1A172D511E3E4A2400985D54 /* AuctionDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDetailPresenter.swift; sourceTree = "<group>"; };
+		1A172D531E3E4A5A00985D54 /* AuctionDetailUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDetailUI.swift; sourceTree = "<group>"; };
 		1A6E53501E3A7AE1003EBE63 /* AuctionInsight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuctionInsight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6E53641E3A7AE1003EBE63 /* AuctionInsightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuctionInsightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6E53741E3A7B4A003EBE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A172D501E3E49C900985D54 /* Auction Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1A172D531E3E4A5A00985D54 /* AuctionDetailUI.swift */,
+				1A172D511E3E4A2400985D54 /* AuctionDetailPresenter.swift */,
+				1A172D4E1E3E49C000985D54 /* AuctionDetailViewController.swift */,
+			);
+			name = "Auction Detail";
+			sourceTree = "<group>";
+		};
 		1A6E53471E3A7AE1003EBE63 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1A6E539B1E3E23D4003EBE63 /* Auction */,
+				1A172D501E3E49C900985D54 /* Auction Detail */,
 				1A6E539D1E3E23EB003EBE63 /* Auction List */,
 				1A6E539C1E3E23DF003EBE63 /* Extension */,
 				1A6E539E1E3E23FE003EBE63 /* Main */,
@@ -336,13 +353,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A6E53B61E3E32C1003EBE63 /* Wireframe.swift in Sources */,
+				1A172D4F1E3E49C000985D54 /* AuctionDetailViewController.swift in Sources */,
 				1A6E53951E3E1118003EBE63 /* Resource.swift in Sources */,
 				1A6E538B1E3B73FD003EBE63 /* Date+ISO.swift in Sources */,
 				1A6E53891E3B6AEE003EBE63 /* JSONInitializable.swift in Sources */,
 				1A6E53871E3B65D3003EBE63 /* Auction.swift in Sources */,
 				1A6E53AD1E3E26A2003EBE63 /* AuctionListPresenter.swift in Sources */,
 				1A6E53B41E3E30E7003EBE63 /* AuctionWireframe.swift in Sources */,
+				1A172D541E3E4A5A00985D54 /* AuctionDetailUI.swift in Sources */,
 				1A6E53AE1E3E26A2003EBE63 /* AuctionListViewController.swift in Sources */,
+				1A172D521E3E4A2400985D54 /* AuctionDetailPresenter.swift in Sources */,
 				1A6E53A81E3E2683003EBE63 /* Presenter.swift in Sources */,
 				1A6E53931E3D0176003EBE63 /* NetworkClient.swift in Sources */,
 				1A6E53991E3E19DB003EBE63 /* Result.swift in Sources */,
