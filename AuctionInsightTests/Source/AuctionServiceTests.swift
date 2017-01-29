@@ -54,4 +54,22 @@ final class MockAuctionClient: NetworkClient {
 	//  MARK: Properties
 	var auctions = [Auction]()
 	var error: Error?
+	var loadCalled: ((Resource<[Auction]>?, Error?) -> ())?
+	//  MARK: NetworkClient
+	func load<A>(_ resource: Resource<A>, completion: @escaping (Result<A>) -> ()) {
+		guard error == nil else {
+			loadCalled?(nil, error)
+			completion(Result<A>(nil, or: error!))
+			return
+		}
+		guard A.self == [Auction].self else {
+			loadCalled?(nil, nil)
+			completion(Result<A>(nil, or: NetworkClientError.other))
+			return
+		}
+		let parse = { (data: Data) in return resource.parse(data) as? [Auction] }
+		let auctionsResource = Resource(url: resource.url, parse: parse, method: resource.method)
+		loadCalled?(auctionsResource, nil)
+		completion(Result.success(auctions as! A))
+	}
 }
